@@ -3,7 +3,9 @@
 Follow all the instructions to install ROS. Please make sure you have followed all steps and have the latest versions of packages installed:
 
 > rosdep update
+
 > sudo apt-get update
+
 > sudo apt-get dist-upgrade
 
 Source installation requires wstool, catkin_tools, and optionally clang-format:
@@ -14,8 +16,7 @@ Source installation requires wstool, catkin_tools, and optionally clang-format:
 
 Optionally create a new workspace, you can name it whatever:
 
-> mkdir ~/catkin_ws
-> cd ~/catkin_ws
+> mkdir ~/catkin_ws && cd ~/catkin_ws
 
 Next, source your ROS workspace to load the necessary environment variables, depending on what version of ROS you installed.
 
