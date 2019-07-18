@@ -1,4 +1,6 @@
-# Install ROS
+# Install Moveit! tutorial 
+
+### Install ROS
 
 Follow all the instructions to install ROS. Please make sure you have followed all steps and have the latest versions of packages installed:
 
@@ -12,7 +14,7 @@ Source installation requires wstool, catkin_tools, and optionally clang-format:
 
 > sudo apt-get install python-wstool python-catkin-tools clang-format-3.9
 
-# Create Workspace and Source
+### Create Workspace and Source
 
 Optionally create a new workspace, you can name it whatever:
 
@@ -22,7 +24,7 @@ Next, source your ROS workspace to load the necessary environment variables, dep
 
 > source /opt/ros/kinetic/setup.bash
 
-# Download Source Code
+### Download Source Code
 
 By default, we will assume you are building the latest branch - master. This branch builds for ROS Kinetic and newer, e.g. on Ubuntu 16.04 and newer. If you would like to build an older release of MoveIt from source, see the section below.
 
@@ -38,11 +40,11 @@ Pull down required repositories and build from within the root directory of your
 
 > catkin config --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release
 
-# Build MoveIt
+### Build MoveIt
 
 > catkin build
 
-# Source the Catkin Workspace
+### Source the Catkin Workspace
 
 > source ~/catkin_ws/devel/setup.bash
 
