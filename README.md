@@ -28,9 +28,13 @@ By default, we will assume you are building the latest branch - master. This bra
 Pull down required repositories and build from within the root directory of your catkin workspace:
 
 > wstool init src
+
 > wstool merge -t src https://raw.githubusercontent.com/ros-planning/moveit/master/moveit.rosinstall
+
 > wstool update -t src
+
 > rosdep install -y --from-paths src --ignore-src --rosdistro kinetic
+
 > catkin config --extend /opt/ros/kinetic --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 # Build MoveIt
