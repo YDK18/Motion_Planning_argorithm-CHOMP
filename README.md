@@ -48,5 +48,32 @@ Pull down required repositories and build from within the root directory of your
 
 > source ~/catkin_ws/devel/setup.bash
 
+# Execute Manipulator-H of CHOMP
+
+To run the CHOMP planner with obstacles, open two shells. In the first shell start RViz and wait for everything to finish loading:
+
+> roslaunch manipulator_h_moveit demo_chomp.launch
+
+In the second shell, run either of the two commands:
+
+> rosrun moveit_tutorials collision_scene_example.py cluttered
+
+or
+
+> rosrun moveit_tutorials collision_scene_example.py sparse
+
+# Execute panda_moveit_config of CHOMP
+
+To run the CHOMP planner with obstacles, open two shells. In the first shell start RViz and wait for everything to finish loading:
+
+> roslaunch panda_moveit_config demo_chomp.launch
+
+In the second shell, run either of the two commands:
+
+> rosrun moveit_tutorials collision_scene_example.py cluttered
+
+or
+
+> rosrun moveit_tutorials collision_scene_example.py sparse
 
 
