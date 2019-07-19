@@ -17,6 +17,7 @@ use_stochastic_descent: true
 enable_failure_recovery: true
 max_recovery_attempts: 5
 
+# Add the parameters
 animate_path: true
 add_randomness: false
 hmc_discretization: 0.01
